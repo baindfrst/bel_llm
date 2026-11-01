@@ -1,0 +1,75 @@
+{"id": "cont_01", "category": "continuation", "style": "completion", "prompt": "Беларусь знаходзіцца ў"}
+{"id": "cont_02", "category": "continuation", "style": "completion", "prompt": "Сёння раніцай над горадам"}
+{"id": "cont_03", "category": "continuation", "style": "completion", "prompt": "Навукоўцы даследуюць"}
+{"id": "cont_04", "category": "continuation", "style": "completion", "prompt": "Мінск — гэта"}
+{"id": "cont_05", "category": "continuation", "style": "completion", "prompt": "Летам у вёсцы"}
+{"id": "cont_06", "category": "continuation", "style": "completion", "prompt": "Мая бабуля заўсёды казала, што"}
+{"id": "cont_07", "category": "continuation", "style": "completion", "prompt": "Гісторыя Вялікага Княства Літоўскага"}
+{"id": "cont_08", "category": "continuation", "style": "completion", "prompt": "Беларуская мова належыць да"}
+{"id": "cont_09", "category": "continuation", "style": "completion", "prompt": "Кожную раніцу я"}
+{"id": "cont_10", "category": "continuation", "style": "completion", "prompt": "У гэтым годзе ўраджай"}
+{"id": "cont_11", "category": "continuation", "style": "completion", "prompt": "Калі надыходзіць зіма, людзі"}
+{"id": "cont_12", "category": "continuation", "style": "completion", "prompt": "Для таго каб вывучыць новую мову, трэба"}
+{"id": "news_01", "category": "news", "style": "completion", "prompt": "Учора ў Гродне адбылася"}
+{"id": "news_02", "category": "news", "style": "completion", "prompt": "Паводле звестак сіноптыкаў, на наступным тыдні"}
+{"id": "news_03", "category": "news", "style": "completion", "prompt": "Нацыянальная бібліятэка Беларусі абвясціла"}
+{"id": "news_04", "category": "news", "style": "completion", "prompt": "У Віцебску пачаўся фестываль"}
+{"id": "daily_01", "category": "everyday", "style": "completion", "prompt": "Калі я прыйшоў дадому, на стале"}
+{"id": "daily_02", "category": "everyday", "style": "completion", "prompt": "Каб прыгатаваць смачныя дранікі, трэба"}
+{"id": "daily_03", "category": "everyday", "style": "completion", "prompt": "У нядзелю мы з сябрамі вырашылі"}
+{"id": "daily_04", "category": "everyday", "style": "completion", "prompt": "Мая любімая пара года — восень, таму што"}
+{"id": "sci_01", "category": "science", "style": "completion", "prompt": "Чорныя дзіркі — гэта"}
+{"id": "sci_02", "category": "science", "style": "completion", "prompt": "Чалавечы мозг складаецца з"}
+{"id": "sci_03", "category": "science", "style": "completion", "prompt": "Фотасінтэз — гэта працэс, пры якім"}
+{"id": "sci_04", "category": "science", "style": "completion", "prompt": "Штучны інтэлект дапамагае"}
+{"id": "lit_01", "category": "literary", "style": "completion", "prompt": "Над ціхай ракой павольна ўзыходзіў туман, і"}
+{"id": "lit_02", "category": "literary", "style": "completion", "prompt": "Ён доўга глядзеў у акно, успамінаючы"}
+{"id": "lit_03", "category": "literary", "style": "completion", "prompt": "Была познняя восень. Лес стаяў"}
+{"id": "lit_04", "category": "literary", "style": "completion", "prompt": "Старая хата на ўскраіне вёскі"}
+{"id": "enc_01", "category": "encyclopedic", "style": "completion", "prompt": "Францыск Скарына — беларускі"}
+{"id": "enc_02", "category": "encyclopedic", "style": "completion", "prompt": "Нясвіжскі замак — гэта"}
+{"id": "enc_03", "category": "encyclopedic", "style": "completion", "prompt": "Белавежская пушча —"}
+{"id": "enc_04", "category": "encyclopedic", "style": "completion", "prompt": "Полацк — адзін з найстаражытнейшых гарадоў"}
+{"id": "qa_capital_by_1", "category": "qa", "group": "capital_by", "style": "question", "prompt": "Якая сталіца Беларусі?", "answers": ["мінск"]}
+{"id": "qa_capital_by_2", "category": "qa", "group": "capital_by", "style": "question", "prompt": "Назаві сталіцу Беларусі.", "answers": ["мінск"]}
+{"id": "qa_capital_by_3", "category": "qa", "group": "capital_by", "style": "completion", "prompt": "Галоўным горадам Беларусі з'яўляецца", "answers": ["мінск"]}
+{"id": "qa_capital_by_4", "category": "qa", "group": "capital_by", "style": "completion", "prompt": "Сталіцай Рэспублікі Беларусь з'яўляецца горад", "answers": ["мінск"]}
+{"id": "qa_capital_fr_1", "category": "qa", "group": "capital_fr", "style": "question", "prompt": "Якая сталіца Францыі?", "answers": ["парыж"]}
+{"id": "qa_capital_fr_2", "category": "qa", "group": "capital_fr", "style": "question", "prompt": "Назаві сталіцу Францыі.", "answers": ["парыж"]}
+{"id": "qa_capital_fr_3", "category": "qa", "group": "capital_fr", "style": "completion", "prompt": "Сталіцай Францыі з'яўляецца горад", "answers": ["парыж"]}
+{"id": "qa_capital_ua_1", "category": "qa", "group": "capital_ua", "style": "question", "prompt": "Якая сталіца Украіны?", "answers": ["кіе"]}
+{"id": "qa_capital_ua_2", "category": "qa", "group": "capital_ua", "style": "question", "prompt": "Назаві сталіцу Украіны.", "answers": ["кіе"]}
+{"id": "qa_capital_ua_3", "category": "qa", "group": "capital_ua", "style": "completion", "prompt": "Галоўным горадам Украіны з'яўляецца", "answers": ["кіе"]}
+{"id": "qa_skaryna_1", "category": "qa", "group": "first_printer", "style": "question", "prompt": "Хто быў першым беларускім кнігадрукаром?", "answers": ["скарын"]}
+{"id": "qa_skaryna_2", "category": "qa", "group": "first_printer", "style": "completion", "prompt": "Першым беларускім кнігадрукаром быў", "answers": ["скарын"]}
+{"id": "qa_skaryna_3", "category": "qa", "group": "first_printer", "style": "completion", "prompt": "Беларускае кнігадрукаванне заснаваў", "answers": ["скарын"]}
+{"id": "qa_paulinka_1", "category": "qa", "group": "paulinka", "style": "question", "prompt": "Хто напісаў п'есу «Паўлінка»?", "answers": ["купал"]}
+{"id": "qa_paulinka_2", "category": "qa", "group": "paulinka", "style": "completion", "prompt": "Аўтарам п'есы «Паўлінка» з'яўляецца", "answers": ["купал"]}
+{"id": "qa_paulinka_3", "category": "qa", "group": "paulinka", "style": "completion", "prompt": "Камедыю «Паўлінка» напісаў", "answers": ["купал"]}
+{"id": "qa_kolas_1", "category": "qa", "group": "novaya_ziamlia", "style": "question", "prompt": "Хто аўтар паэмы «Новая зямля»?", "answers": ["колас"]}
+{"id": "qa_kolas_2", "category": "qa", "group": "novaya_ziamlia", "style": "completion", "prompt": "Паэму «Новая зямля» напісаў", "answers": ["колас"]}
+{"id": "qa_kolas_3", "category": "qa", "group": "novaya_ziamlia", "style": "completion", "prompt": "Аўтарам паэмы «Новая зямля» з'яўляецца", "answers": ["колас"]}
+{"id": "qa_narach_1", "category": "qa", "group": "largest_lake", "style": "question", "prompt": "Якое самае вялікае возера ў Беларусі?", "answers": ["нарач"]}
+{"id": "qa_narach_2", "category": "qa", "group": "largest_lake", "style": "question", "prompt": "Назаві самае вялікае возера Беларусі.", "answers": ["нарач"]}
+{"id": "qa_narach_3", "category": "qa", "group": "largest_lake", "style": "completion", "prompt": "Найбуйнейшым возерам Беларусі з'яўляецца возера", "answers": ["нарач"]}
+{"id": "qa_zubr_1", "category": "qa", "group": "pushcha_symbol", "style": "question", "prompt": "Які звер з'яўляецца сімвалам Белавежскай пушчы?", "answers": ["зубр"]}
+{"id": "qa_zubr_2", "category": "qa", "group": "pushcha_symbol", "style": "completion", "prompt": "Сімвалам Белавежскай пушчы лічыцца", "answers": ["зубр"]}
+{"id": "qa_zubr_3", "category": "qa", "group": "pushcha_symbol", "style": "completion", "prompt": "Галоўны жыхар Белавежскай пушчы — гэта", "answers": ["зубр"]}
+{"id": "qa_polatsk_1", "category": "qa", "group": "polatsk_river", "style": "question", "prompt": "На якой рацэ стаіць Полацк?", "answers": ["дзвін"]}
+{"id": "qa_polatsk_2", "category": "qa", "group": "polatsk_river", "style": "completion", "prompt": "Полацк размешчаны на беразе ракі", "answers": ["дзвін"]}
+{"id": "qa_polatsk_3", "category": "qa", "group": "polatsk_river", "style": "completion", "prompt": "Горад Полацк стаіць на рацэ", "answers": ["дзвін"]}
+{"id": "qa_currency_1", "category": "qa", "group": "currency", "style": "question", "prompt": "Якая валюта ў Беларусі?", "answers": ["рубел", "рубл"]}
+{"id": "qa_currency_2", "category": "qa", "group": "currency", "style": "completion", "prompt": "Грашовая адзінка Беларусі называецца", "answers": ["рубел", "рубл"]}
+{"id": "qa_currency_3", "category": "qa", "group": "currency", "style": "completion", "prompt": "Нацыянальная валюта Беларусі —", "answers": ["рубел", "рубл"]}
+{"id": "qa_sun_1", "category": "qa", "group": "earth_orbit", "style": "question", "prompt": "Вакол чаго круціцца Зямля?", "answers": ["сонц"]}
+{"id": "qa_sun_2", "category": "qa", "group": "earth_orbit", "style": "completion", "prompt": "Зямля круціцца вакол", "answers": ["сонц"]}
+{"id": "qa_sun_3", "category": "qa", "group": "earth_orbit", "style": "completion", "prompt": "Планета Зямля верціцца вакол", "answers": ["сонц"]}
+{"id": "qa_boil_1", "category": "qa", "group": "water_boils", "style": "question", "prompt": "Пры якой тэмпературы кіпіць вада?", "answers": ["\\b100\\b", "\\bсто\\b"]}
+{"id": "qa_boil_2", "category": "qa", "group": "water_boils", "style": "completion", "prompt": "Вада кіпіць пры тэмпературы", "answers": ["\\b100\\b", "\\bсто\\b"]}
+{"id": "qa_boil_3", "category": "qa", "group": "water_boils", "style": "completion", "prompt": "Тэмпература кіпення вады складае", "answers": ["\\b100\\b", "\\bсто\\b"]}
+{"id": "qa_week_1", "category": "qa", "group": "days_in_week", "style": "question", "prompt": "Колькі дзён у тыдні?", "answers": ["\\bсем\\b", "\\bсямі\\b", "\\b7\\b"]}
+{"id": "qa_week_2", "category": "qa", "group": "days_in_week", "style": "completion", "prompt": "Тыдзень складаецца з", "answers": ["\\bсем\\b", "\\bсямі\\b", "\\b7\\b"]}
+{"id": "qa_week_3", "category": "qa", "group": "days_in_week", "style": "completion", "prompt": "У адным тыдні", "answers": ["\\bсем\\b", "\\bсямі\\b", "\\b7\\b"]}
+{"id": "qa_jupiter_1", "category": "qa", "group": "largest_planet", "style": "question", "prompt": "Якая самая вялікая планета Сонечнай сістэмы?", "answers": ["юпітэр"]}
+{"id": "qa_jupiter_2", "category": "qa", "group": "largest_planet", "style": "question", "prompt": "Назаві самую вялікую планету Сонечнай сістэмы.", "answers": ["юпітэр"]}
+{"id": "qa_jupiter_3", "category": "qa", "group": "largest_planet", "style": "completion", "prompt": "Найбуйнейшай планетай Сонечнай сістэмы з'яўляецца", "answers": ["юпітэр"]}

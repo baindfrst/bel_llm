@@ -1,0 +1,52 @@
+# Последний шаг базы. Init: runs/mid_C_100m_32k_r2/model_best.pt
+# Сданные веса лежат в runs/base_r4/model_best.pt (копия этого прогона).
+#
+# До него та же архитектура, другой lr:
+#   r1: init runs/mid_C_100m_32k,  lr 1e-6, max_steps 2000
+#   r2: init runs/mid_C_100m_32k_r1, lr 1e-6, max_steps 30000
+#   r4: init runs/mid_C_100m_32k_r2, lr 3e-7, max_steps 30000
+name: mid_C_100m_32k_r4
+seed: 1337
+out_dir: runs
+
+data:
+  tokenizer: tokenizers/bel_bpe_32k.model
+  train_bin: data/tokens/bpe32k/train.bin
+  val_bin: data/tokens/bpe32k/validation.bin
+  test_bin: data/tokens/bpe32k/test.bin
+
+model:
+  vocab_size: 32000
+  max_seq_len: 512
+  d_model: 768
+  n_layers: 12
+  n_heads: 8
+  n_kv_heads: 4
+  intermediate_size: 2560
+  rope_theta: 10000.0
+  norm_eps: 1.0e-5
+  tie_embeddings: true
+  init_std: 0.02
+  dropout: 0.0
+  attn_impl: auto
+
+train:
+  micro_batch_size: 16
+  grad_accum_steps: 16
+  max_steps: 30000
+  warmup_steps: 50
+  lr: 3.0e-7
+  min_lr_ratio: 1.0
+  weight_decay: 0.1
+  beta1: 0.9
+  beta2: 0.95
+  grad_clip: 1.0
+  dtype: auto
+  compile: true
+  gradient_checkpointing: true
+  log_interval: 20
+  eval_interval: 1000
+  eval_tokens: 500000
+  eval_batch_size: 8
+  save_interval: 2000
+  final_eval_tokens: null

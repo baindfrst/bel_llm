@@ -1,0 +1,26 @@
+# Ацэнка чат-мадэлі. Для сырога LM: chat: false
+prompts: eval_prompts.jsonl
+seed: 1234
+chat: true
+
+ppl:
+  splits: [validation, test]
+  batch_size: 16
+  max_tokens: null
+
+generation:
+  samples_per_prompt: 2
+  max_new_tokens: 64
+  temperature: 0.5
+  top_k: 40
+  top_p: 0.85
+  repetition_penalty: 1.15
+  no_repeat_ngram_size: 3
+
+qa:
+  max_new_tokens: 32
+  temperature: 0.0
+  repetition_penalty: 1.0
+  no_repeat_ngram_size: 0
+  answer_window_chars: 160
+  question_template: "Пытанне: {prompt}\nАдказ:"

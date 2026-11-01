@@ -1,0 +1,165 @@
+# priority: меньше — документ остаётся при дедупе.
+raw_dir: data/raw
+clean_dir: data/clean
+hf_cache_dir: data/hf_cache
+
+sources:
+  - name: openorca_be
+    enabled: true
+    priority: 9
+    kind: local
+    files: "data/raw/openorca_be.jsonl.gz"
+    profile: dialogue
+    license: "Apache-2.0 (1M-GPT4-Augmented)"
+    train_sample_frac: 0.15
+
+  - name: ccmatrix_enbe
+    enabled: true
+    priority: 10
+    kind: local
+    files: "data/raw/ccmatrix_enbe.jsonl.gz"
+    profile: parallel
+    license: "CC-BY (sentence-transformers/parallel-sentences-ccmatrix)"
+    train_sample_frac: 1.0
+
+  - name: c4_be
+    enabled: true
+    priority: 11
+    kind: local
+    files: "data/raw/c4_be.jsonl.gz"
+    profile: web
+    license: "CC-BY 4.0 / CC-основа (allenai/c4)"
+    train_sample_frac: 0.3
+
+  - name: wikipedia_be
+    enabled: true
+    priority: 1
+    kind: hf
+    repo_id: wikimedia/wikipedia
+    files: "20231101.be/*.parquet"
+    text_field: text
+    id_field: id
+    url_field: url
+    title_field: title
+    profile: wiki
+    license: CC BY-SA 4.0 / GFDL
+    train_sample_frac: 1.1
+
+  - name: wikisource_be
+    enabled: true
+    priority: 2
+    kind: hf
+    repo_id: wikimedia/wikisource
+    files: "20231201.be/*.parquet"
+    text_field: text
+    id_field: id
+    url_field: url
+    title_field: title
+    profile: literary
+    license: "CC BY-SA 4.0 (сами тексты — преимущественно public domain)"
+    train_sample_frac: 1.0
+
+  - name: wikipedia_be_tarask
+    enabled: true
+    priority: 3
+    kind: local
+    files: "data/raw/wikipedia_be_old.jsonl.gz"
+    text_field: text
+    id_field: id
+    url_field: url
+    title_field: title
+    profile: wiki
+    license: CC BY-SA 4.0 / GFDL
+    train_sample_frac: 1.0
+
+  - name: fineweb2_be
+    enabled: true
+    priority: 5
+    kind: hf
+    repo_id: HuggingFaceFW/fineweb-2
+    files: "data/bel_Cyrl/train/*.parquet"
+    text_field: text
+    id_field: id
+    url_field: url
+    profile: web
+    max_raw_mb: 6000
+    license: ODC-By 1.0 (+ условия Common Crawl)
+    train_sample_frac: 1.0
+
+  - name: madlad400_be_clean
+    enabled: true
+    priority: 6
+    kind: hf
+    repo_id: allenai/MADLAD-400
+    files: "data/be/be_clean_*.jsonl.gz"
+    text_field: text
+    profile: web
+    max_raw_mb: 5000
+    license: ODC-By 1.0 (+ условия Common Crawl)
+    train_sample_frac: 1.0
+
+  - name: hplt2_be
+    enabled: true
+    priority: 7
+    kind: hf
+    repo_id: HPLT/HPLT2.0_cleaned
+    files: "bel_Cyrl/*.parquet"
+    text_field: text
+    id_field: id
+    url_field: u
+    profile: web
+    max_raw_mb: 6000
+    license: CC0 1.0 (+ условия Common Crawl / Internet Archive)
+    train_sample_frac: 1.0
+
+  - name: alpaca_be
+    enabled: true
+    priority: 8
+    kind: local
+    files: "data/raw/alpaca_be.jsonl.gz"
+    profile: dialogue
+    license: "MIT (saillab/alpaca-belarusian-cleaned)"
+    train_sample_frac: 1.5
+
+profiles:
+  wiki:
+    min_chars: 200
+    min_words: 30
+    min_bel_share: 0.90
+    strict_lines: false
+    drop_reference_sections: true
+  literary:
+    min_chars: 300
+    min_words: 50
+    min_bel_share: 0.90
+    strict_lines: false
+    drop_reference_sections: false
+  web:
+    min_chars: 300
+    min_words: 50
+    min_bel_share: 0.85
+    strict_lines: true
+    min_terminal_punct_share: 0.3
+    drop_reference_sections: false
+  dialogue:
+    min_chars: 80
+    min_words: 12
+    min_bel_share: 0.85
+    strict_lines: false
+    drop_reference_sections: false
+
+  parallel:
+    min_chars: 10
+    min_words: 2
+    min_bel_share: 0.85
+    strict_lines: false
+    drop_reference_sections: false
+
+common:
+  max_dup_line_share: 0.3
+  max_symbol_word_ratio: 0.1
+  min_mean_word_len: 2.5
+  max_mean_word_len: 12.0
+  min_alpha_word_share: 0.7
+  drop_taraskevica: false
+  taraskevica_threshold: 1.5
